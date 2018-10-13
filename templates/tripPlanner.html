@@ -13,24 +13,25 @@
 
         evt.target.classList.remove('btn-outline-dark')
         evt.target.classList.add('btn-dark');
-        //frame.src = link;
         frame.contentWindow.location.replace(link);
     }
 </script>
-<a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('index') }} style="padding:15% 15%; background-color: #0541B4">
+<a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('index') }} style="background-color: #0541B4; position: absolute; top: 0; left: 2.5%; margin: 0px; width: 10%; height: 10%; z-index: 10">
     <span style="font-size:200%; font-weight:bold">HOME</span>
 </a>
 
-<a style="position: absolute; top: 0; left: 1%; margin: 0%; width: 10%; height: 10%; text-align: center"
+<!-- <a style="position: absolute; top: 0; left: 1%; margin: 0%; width: 10%; height: 10%; text-align: center"
     class="btn btn-primary" href="{{ url_for('index') }}">
     HOME
-</a>
+</a> -->
 
-<p style="position: absolute; top:0; left: 11%; width: 78%; height: 10%; background: green">
-    Info
-</p>
+<div style="position: absolute; top: 1%; left: 13%; width: 84.5%; height: 9%" class="alert alert-info">
+    <p style="position: relative; top:0; left: 0; text-align: center">
+        To open an article, click on the underlines title which you want to view<br>To return to the article list, click on the news title again
+    </p>
+</div>
 
-<div style="position: absolute; top: 10%; left: 2.5%; width: 95%; height: 85%">
-    <iframe id="frame" style="position: relative; top: 10%; left: 0" src="https://transportnsw.info/trip#/" width="100%" height="90%"></iframe>
+<div style="position: absolute; top: 11%; left: 10%; width: 80%; height: 85%">
+    <iframe id="frame" style="position: relative; top: 10%; left: 0; background: white" src="https://widget.transportnsw.info/trip/" width="100%" height="90%" class="rounded"></iframe>
 </div>
 {% endblock %}
