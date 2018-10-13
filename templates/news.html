@@ -32,18 +32,23 @@
 
 <div style="position: absolute; top: 10%; left: 2.5%; width: 95%; height: 85%">
     <div style="position: relative; top: 0; left: 0; width: 100%; height: 10%">
-        <nav class="navbar navbar-inverse" style="width: 100%; height: 100%; padding: 0">
+        <div class="row">
+            <div class="col">
+                <button onclick="loadPage('http://www.news.com.au', event)" class="btn btn-dark navBtn" style="font-size: 220%; width: 100%">News.com</button>
+            </div>
+        </div>
+        <!-- <nav class="navbar navbar-inverse" style="width: 100%; height: 100%; padding: 0">
             <div class="container-fluid" style="width: 100%; height: 100%; padding: 0">
                 <ul class="nav navbar-nav" style="width: 100%; height: 100%;">
-                    <li><button onclick="loadPage('http://www.news.com.au', event)" class="btn btn-dark navBtn" style="font-size: 220%; width: 100%">News.com</button></li>
+                    <li></li>
                     <li><button onclick="loadPage('http://www.theguardian.com.au', event)" class="btn btn-outline-dark navBtn" style="font-size: 220%; width: 100%">The Guardian</button></li>
                     <li><button onclick="loadPage('http://www.smh.com.au', event)" class="btn btn-outline-dark navBtn" style="font-size: 220%; width: 100%">SMH</button></li>
                     <li><button onclick="loadPage('http://www.sbs.com.au/news/latest', event)" class="btn btn-outline-dark navBtn" style="font-size: 220%; width: 100%">SBS</button></li>
                     <li><button onclick="loadPage('http://www.abc.com.au', event)" class="btn btn-outline-dark navBtn" style="font-size: 220%; width: 100%">ABC</button></li>
-                    <!-- <li><button class="btn" style="font-size: 220%">News.com</button></li> -->
+                    <li><button class="btn" style="font-size: 220%">News.com</button></li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
     </div>
     <iframe id="frame" style="position: relative; top: 10%; left: 0" src="https://www.news.com.au/" width="100%" height="90%"></iframe>
 </div>
