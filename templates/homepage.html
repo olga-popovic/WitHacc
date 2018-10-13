@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <style>
+        .modal-backdrop{
+          opacity:0; transition:opacity .2s;
+        }
+        .modal-backdrop.in{
+          opacity:.7;
+        }
+    </style>
+
+    <h1>info</h1>
+    <hr/>
+    <br/>
+
+    <div class="container mx-auto">
+
+        <!--<table class="table table-striped">
+            
+            <tbody>
+                <tr>
+                    <td> <button class="btn btn-primary btn-lg">News</button> </td>
+                    <td> <button class="btn btn-primary btn-lg">Weather</button> </td>
+                    <td> <button class="btn btn-primary btn-lg">Email</button> </td>
+                </tr>
+                <tr>
+                    <td> <button class="btn btn-primary btn-lg">Transport</button> </td>
+                    <td> <button class="btn btn-primary btn-lg">Shopping</button> </td>
+                    <td> <button class="btn btn-primary btn-lg">Tutorials</button> </td>
+                </tr>
+            </tbody>
+
+        </table>-->
+
+        <div class="row h-50">
+                <div class="col"> <button class="btn btn-primary btn-lg btn-block border-info my-1" style="padding:20% 20%">News</button> </div>
+                <div class="col"> <button class="btn btn-primary btn-lg btn-block border-info my-1" style="padding:20% 20%">Weather</button> </div>
+                <div class="col"> <button class="btn btn-primary btn-lg btn-block border-info my-1" style="padding:20% 20%">Email</button> </div>
+        </div> 
+
+        <div class="row h-50">
+                <div class="col"> <button class="btn btn-primary btn-lg btn-block border-info my-1" style="padding:20% 20%">Transport</button> </div>
+                <div class="col"> <button class="btn btn-primary btn-lg btn-block border-info my-1" style="padding:20% 20%">Shopping</button> </div>
+                <div class="col"> <button class="btn btn-primary btn-lg btn-block border-info my-1" style="padding:20% 20%">Tutorials</button> </div>
+        </div> 
+
+        <div class="row h-50">
+                <div class="col"> <button class="btn btn-primary btn-lg btn-block border-info my-1" style="padding:20% 20%">Entertainment</button> </div>
+                <div class="col"> <button class="btn btn-primary btn-lg btn-block border-info my-1" style="padding:20% 20%">Fishing</button> </div>
+                <div class="col"> <button class="btn btn-primary btn-lg btn-block border-info my-1" style="padding:20% 20%">Golf</button> </div>
+        </div> 
+
+    </div>
+
+
+
+
+
+{% endblock %}
