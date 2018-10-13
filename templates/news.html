@@ -4,7 +4,7 @@
 <script type="text/javascript">
     function loadPage(link, evt) {
         const frame = document.getElementById('frame');
-        const buttons = document.getElementsByClassName('btn');
+        const buttons[] = document.getElementsByClassName('btn');
         console.log (buttons);
         buttons.forEach((button) => button.classList.remove('btn-success'))
         evt.target.classList.add('btn-success')
