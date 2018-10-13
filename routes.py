@@ -30,3 +30,14 @@ def trip():
 @app.route("/weather",methods=["GET"])
 def weather():
     return render_template("weather.html", title="Trip Planner");
+
+@app.route("/shopping",methods=["GET"])
+def shopping():
+    message1 = ['a', 'b']
+    message1[0] = "To visit a webpage: "
+    message1[1] = "click the corresponding button directly below."
+    message2 = ['a', 'b']
+    message2[0] = "To search for an item: "
+    message2[1] = "type your desired item in the Search field. The website will register what you've searched, and look for matches in what is currently on offer."
+    messages = [message1,message2]
+    return render_template("shopping.html", title="Shopping", messages=messages);

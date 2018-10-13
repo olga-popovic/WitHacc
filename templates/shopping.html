@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+
+<script type="text/javascript">
+    function loadPage(link, evt) {
+        const frame = document.getElementById('frame');
+        let buttons = document.getElementsByClassName('navBtn');
+
+        for (i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove('btn-dark');
+            buttons[i].classList.add('btn-outline-dark')
+        }
+
+        evt.target.classList.remove('btn-outline-dark')
+        evt.target.classList.add('btn-dark');
+        frame.contentWindow.location.replace(link);
+    }
+</script>
+
+<style>
+    #frame {
+        /* position: relative; */
+        top: 0;
+        left: 0;
+        background: white;
+
+        height: 90%;
+        width: 100%;
+    }
+</style>
+
+<a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('index') }}
+    style="background-color: #0541B4; position: absolute; top: 0; left: 2.5%; margin: 0px; width: 10%; height: 10%">
+    <span style="font-size:200%; font-weight:bold">HOME</span>
+</a>
+
+
+<div style="position: absolute; top: 1%; left: 13%; width: 84.5%; height: 9%" class="alert alert-info">
+    {% for message in messages %}
+    <p style="position: relative; top:0; left: 0; text-align: center">{{ message[0] }}{{ message[1] }}<br></p>
+    {% endfor %}
+</div>
+
+<div style="position: absolute; top: 11%; left: 2.5%; width: 95%; height: 85%">
+    <div style="position: relative; top: 0; left: 0; width: 100%; height: 10%">
+        <div class="row">
+            <div class="col">
+                <button onclick="loadPage('https://www.amazon.com.au/', event)" class="btn btn-dark navBtn" style="font-size: 220%; width: 100%">Amazon</button>
+            </div>
+            <div class="col">
+                <button onclick="loadPage('https://www.ebay.com.au', event)" class="btn btn-outline-dark navBtn" style="font-size: 220%; width: 100%">E-Bay</button>
+            </div>
+            <div class="col">
+                <button onclick="loadPage('https://www.gumtree.com.au', event)" class="btn btn-outline-dark navBtn" style="font-size: 220%; width: 100%">Gumtree</button>
+            </div>
+        </div>
+    </div>
+    <iframe id="frame" src="https://www.amazon.com.au/"></iframe>
+</div>
+{% endblock %}
