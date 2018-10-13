@@ -25,4 +25,4 @@ def news():
 
 @app.route("/trip",methods=["GET"])
 def trip():
-    return render_template("tripPlanner.html", title="News");
+    return render_template("tripPlanner.html", title="Trip Planner");

@@ -1,11 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <style>
+    .btn-outline-dark {
+        color: #343a40;
+        background-color: #0541B4;
+        background-image: none;
+        -webkit-text-fill-color: white;
+        border-color: #343a40;
+    }
+    </style>
 
-    <h1>{{ title }}</h1>
+    <h1 style="align-items: center">{{ title }}</h1>
     <hr/>
     <ul>
-        <h3 style="font-size: 140; font-weight: bold"><u>Usage:</u></h3>
+        <p style="font-size: 200%;"><u>Usage:</u></p>
         {% for message in messages %}
         <div class="alert alert-info" role="alert" style="width: 96%; font-size:100%;">
             <li style="font-size: 140%"><strong>{{message[0]}}</strong>{{ message[1] }}</li>
@@ -34,21 +43,21 @@
         </table>-->
 
         <div class="row h-50">
-            <div class="col"> <a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; background-color: #0541B4"><span style="font-size:200%; font-weight:bold">News</span></a></div>
-            <div class="col"> <a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; background-color: #0541B4"><span style="font-size:200%; font-weight:bold">Weather</span></a></div>
-            <div class="col"> <a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; background-color: #0541B4"><span style="font-size:200%; font-weight:bold">Email</span></a></div>
+            <div class="col"> <a class="btn btn-outline-dark navBtn btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; border-color: #0541B4"><span style="font-size:200%; font-weight:bold">News</span></a></div>
+            <div class="col"> <a class="btn btn-outline-dark navBtn btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; border-color: #0541B4"><span style="font-size:200%; font-weight:bold">Weather</span></a></div>
+            <div class="col"> <a class="btn btn-outline-dark navBtn btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; border-color: #0541B4"><span style="font-size:200%; font-weight:bold">Email</span></a></div>
         </div>
         <br>
         <div class="row h-50">
-                <div class="col"> <a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('trip') }} style="padding:15% 15%; background-color: #0541B4"><span style="font-size:200%; font-weight:bold">Transport</span></a></div>
-                <div class="col"> <a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; background-color: #0541B4"><span style="font-size:200%; font-weight:bold">Shopping</span></a></div>
-                <div class="col"><a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; background-color: #0541B4"><span style="font-size:200%; font-weight:bold">Google</span></a></div>
+                <div class="col"> <a class="btn btn-outline-dark navBtn btn-lg btn-block border-info my-1" href={{ url_for('trip') }} style="padding:15% 15%; border-color: #0541B4"><span style="font-size:200%; font-weight:bold">Transport</span></a></div>
+                <div class="col"> <a class="btn btn-outline-dark navBtn btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; border-color: #0541B4"><span style="font-size:200%; font-weight:bold">Shopping</span></a></div>
+                <div class="col"> <a class="btn btn-outline-dark navBtn btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; border-color: #0541B4"><span style="font-size:200%; font-weight:bold">Google</span></a></div>
         </div>
         <br>
         <div class="row h-50">
-            <div class="col"> <a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; background-color: #0541B4"><span style="font-size:200%; font-weight:bold">Movies</span></a> </div>
-            <div class="col"> <a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; background-color: #0541B4"><span style="font-size:200%; font-weight:bold">Fishing</span></a> </div>
-            <div class="col"> <a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; background-color: #0541B4"><span style="font-size:200%; font-weight:bold">Golf</span></a> </div>
+            <div class="col"> <a class="btn btn-outline-dark navBtn btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; border-color: #0541B4"><span style="font-size:200%; font-weight:bold">Movies</span></a> </div>
+            <div class="col"> <a class="btn btn-outline-dark navBtn btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; border-color: #0541B4"><span style="font-size:200%; font-weight:bold">Fishing</span></a> </div>
+            <div class="col"> <a class="btn btn-outline-dark navBtn btn-lg btn-block border-info my-1" href={{ url_for('news') }} style="padding:15% 15%; border-color: #0541B4"><span style="font-size:200%; font-weight:bold">Golf</span></a> </div>
         </div>
         <br>
     </div>
