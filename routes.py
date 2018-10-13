@@ -7,7 +7,7 @@ from datetime import datetime
 @app.route("/",methods=["GET"])
 #@app.route("/home", methods=["GET"])
 def index():
-    return render_template("base.html", title="Internet Help Page");
+    return render_template("homepage.html", title="Internet Help Page");
 
 @app.route("/news",methods=["GET"])
 def news():
