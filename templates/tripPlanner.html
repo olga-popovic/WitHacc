@@ -16,9 +16,15 @@
         frame.contentWindow.location.replace(link);
     }
 </script>
-<a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('index') }} style="background-color: #0541B4; position: absolute; top: 0; left: 2.5%; margin: 0px; width: 10%; height: 10%; z-index: 10">
-    <span style="font-size:200%; font-weight:bold">HOME</span>
+<a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('index') }}
+    style="background-color: #0541B4; display: block; position: absolute; top: 0; left: 2.5%; margin: 0px; width: 10%; height: 10%; z-index: 10; vertical-align">
+    <span style="font-size:200%; font-weight:bold; position: relative; margin-top: auto; margin-bottom: auto ">HOME</span>
 </a>
+
+<!-- <a class="btn btn-outline-dark navBtn btn-lg btn-block border-info my-1" href={{ url_for('trip') }}
+    style="position: absolute; top: 0; left: 2.5%; width: 10%; height: 10%">
+    <span style="font-size:200%; font-weight:bold">HOME</span>
+</a> -->
 
 
 <div style="position: absolute; top: 1%; left: 13%; width: 84.5%; height: 9%" class="alert alert-info">
