@@ -20,19 +20,26 @@
     <span style="font-size:200%; font-weight:bold">HOME</span>
 </a>
 
-<!-- <a style="position: absolute; top: 0; left: 1%; margin: 0%; width: 10%; height: 10%; text-align: center"
-    class="btn btn-primary" href="{{ url_for('index') }}">
-    HOME
-</a> -->
 
 <div style="position: absolute; top: 1%; left: 13%; width: 84.5%; height: 9%" class="alert alert-info">
     <p style="position: relative; top:0; left: 0; text-align: center">
-        Enter your current location and destination and select either the time you want to leave from your location, or the time you want to arrive at the destination
-        <br>If you wish to print the details, scroll down to the bottom and click on “Print” and then the blue print button
+        See instructions down the side to enter information<br>If you wish to print the details, scroll down to the bottom and click on “Print” and then the blue print button
     </p>
 </div>
 
-<div style="position: absolute; top: 11%; left: 10%; width: 80%; height: 85%">
+<div style="position: absolute; top: 14%; left: 2.5%; width: 22.5%; height: 76%" class="alert alert-info">
+    <br>
+    <br>
+    <br>
+    <ul style="margin: 0px; padding:5%">
+        <li>Enter your current location here</li>
+        <li>Click on leaving now to change it. If you want to be somewhere by a certain time, use "Arriving". If you want to leave at a certain time, use "Leaving"</li>
+        <li>Enter the date and time that you wish to arrive/leave on</li>
+        <li>Click "Go"</li>
+    </ul>
+</div>
+
+<div style="position: absolute; top: 11%; left: 27.5%; width: 70%; height: 85%">
     <iframe id="frame" style="position: relative; top: 3%; left: 0; background: white" src="https://widget.transportnsw.info/trip/" width="100%" height="90%" class="rounded"></iframe>
 </div>
 {% endblock %}
