@@ -9,12 +9,14 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	{% if title %}
-		<title>HAMS - {{ title }}</title>
+		<title>InternetHelp - {{ title }}</title>
 	{% else %}
 		<title>NEEDS TITLE</title>
 	{% endif %}
 </head>
 <body>
+    <div class="container" style="margin-top: 50px">
 		{% block content %}{% endblock %}
+    </div>
 </body>
 </html>
