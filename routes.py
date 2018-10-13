@@ -12,3 +12,7 @@ def index():
 @app.route("/news",methods=["GET"])
 def news():
     return render_template("news.html", title="News");
+
+@app.route("/trip",methods=["GET"])
+def trip():
+    return render_template("tripPlanner.html", title="Trip Planner");
