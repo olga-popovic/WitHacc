@@ -16,7 +16,8 @@
         frame.contentWindow.location.replace(link);
     }
 </script>
-<a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('index') }} style="background-color: #0541B4; position: absolute; top: 0; left: 2.5%; margin: 0px; width: 10%; height: 10%; z-index: 10">
+<a class="btn btn-primary btn-lg btn-block border-info my-1" href={{ url_for('index') }}
+    style="background-color: #0541B4; position: absolute; top: 0; left: 2.5%; margin: 0px; width: 10%; height: 10%">
     <span style="font-size:200%; font-weight:bold">HOME</span>
 </a>
 
@@ -51,6 +52,6 @@
             </div>
         </div>
     </div>
-    <iframe id="frame" style="position: relative; top: 10%; left: 0; background: white" src="https://www.news.com.au/" width="100%" height="90%"></iframe>
+    <iframe id="frame" style="position: relative; top: 0; left: 0; background: white" src="https://www.news.com.au/" width="100%" height="90%"></iframe>
 </div>
 {% endblock %}
